@@ -4,7 +4,7 @@
 #
 Name     : perl-I18N-Charset
 Version  : 1.418
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/M/MT/MTHURN/I18N-Charset-1.418.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MT/MTHURN/I18N-Charset-1.418.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libi/libi18n-charset-perl/libi18n-charset-perl_1.417-1.debian.tar.xz
@@ -25,6 +25,7 @@ headers as 'x-sjis'.
 Summary: dev components for the perl-I18N-Charset package.
 Group: Development
 Provides: perl-I18N-Charset-devel = %{version}-%{release}
+Requires: perl-I18N-Charset = %{version}-%{release}
 
 %description dev
 dev components for the perl-I18N-Charset package.
@@ -35,7 +36,7 @@ dev components for the perl-I18N-Charset package.
 cd ..
 %setup -q -T -D -n I18N-Charset-1.418 -b 1
 mkdir -p deblicense/
-mv %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/I18N-Charset-1.418/deblicense/
+cp -r %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/I18N-Charset-1.418/deblicense/
 
 %build
 export http_proxy=http://127.0.0.1:9/
