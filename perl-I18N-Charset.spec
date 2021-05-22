@@ -4,7 +4,7 @@
 #
 Name     : perl-I18N-Charset
 Version  : 1.419
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/M/MT/MTHURN/I18N-Charset-1.419.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MT/MTHURN/I18N-Charset-1.419.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libi/libi18n-charset-perl/libi18n-charset-perl_1.417-1.debian.tar.xz
