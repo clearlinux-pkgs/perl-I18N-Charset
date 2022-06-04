@@ -4,7 +4,7 @@
 #
 Name     : perl-I18N-Charset
 Version  : 1.419
-Release  : 22
+Release  : 23
 URL      : https://cpan.metacpan.org/authors/id/M/MT/MTHURN/I18N-Charset-1.419.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MT/MTHURN/I18N-Charset-1.419.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libi/libi18n-charset-perl/libi18n-charset-perl_1.417-1.debian.tar.xz
@@ -105,4 +105,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/I18N/Charset.pm
+/usr/lib/perl5/*
